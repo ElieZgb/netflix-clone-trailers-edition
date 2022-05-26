@@ -1,0 +1,106 @@
+.nav {
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+	top: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20px 50px;
+	transition: all 150ms ease-in;
+}
+
+.nav_black {
+	background-color: #111;
+}
+
+.nav_logo {
+	width: 90px;
+	object-fit: contain;
+	cursor: pointer;
+}
+
+.nav_links {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 50px;
+	flex: 1;
+}
+
+.nav_links ul {
+	color: #fff;
+	list-style: none;
+	display: flex;
+	font-size: 17px;
+	user-select: none;
+}
+
+.nav_links ul li {
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.nav_links ul li:first-child {
+	font-weight: bold;
+}
+
+.nav_links ul li:hover {
+	color: #b3b3b3;
+}
+
+.nav_buttons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.nav_buttons .fontawesome_icon {
+	font-size: 20px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.nav_buttons .fontawesome_icon,
+.nav_buttons .nav_profile {
+	margin-right: 25px;
+}
+
+.nav_profile {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.nav_profile img {
+	width: inherit;
+	object-fit: contain;
+	border-radius: 3px;
+}
+
+.nav_profile::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: -20px;
+	transform: translateY(-50%);
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 5px solid #fff;
+}
+
+@media (max-width: 830px) {
+	.nav_links {
+		display: none;
+	}
+}
+
+@media (max-width: 375px) {
+	.fontawesome_icon {
+		display: none;
+	}
+}
