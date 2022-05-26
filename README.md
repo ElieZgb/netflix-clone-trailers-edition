@@ -4,3 +4,5 @@
 
 
 👉🏻  Keep in mind you need your API key from themoviedb api to work.
+
+(when cloned, node_modules must be downloaded cause folder is missing)
