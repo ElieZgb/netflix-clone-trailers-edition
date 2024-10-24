@@ -10,3 +10,5 @@
 
 
 👉🏻  Keep in mind you need your API key from themoviedb api to work.
+
+Try it at [netflix-clone-d7106.web.app/](netflix-clone-d7106.web.app/)
